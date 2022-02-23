@@ -1,0 +1,18 @@
+l=[]
+n=int(input('enter number;'))
+for i  in range(n):
+      e=int(input())
+      l.append(e)
+min=l[0]
+for i in range(1,n):
+      if l[i]<min:
+      	min=l[1]
+      print(min)
+for i in range(n):
+	e=int(input())
+	l.append(e)
+max=l[0]
+for i in range(1,n):
+	if l[i]>marlx:
+		max=l[i]
+		print(max)
