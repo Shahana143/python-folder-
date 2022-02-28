@@ -1,0 +1,12 @@
+def count_num(my_list, x_val):
+   my_counter = 0
+   for elem in my_list:
+      if (elem == x_val):
+         my_counter = my_counter + 1
+   return my_counter
+
+my_list = [ 1, 2, 3, 2, 1, 3, 2, 1, 2, 2]
+print("The list is :")
+print(my_list)
+occ_number = 2
+print('{} has occurred {} times'.format(occ_number, count_num(my_list, occ_number)))
