@@ -1,14 +1,24 @@
-# Program to add two matrices using 
+#matrix addition in python
+rows = int(input("Enter the Number of rows : " ))
+column = int(input("Enter the Number of Columns: "))
 
-X = [[7,3],
-    [5,6],
-    [8,9]]
+print("Enter the elements of First Matrix:")
+matrix_a= [[int(input()) for i in range(column)] for i in range(rows)]
+print("First Matrix is: ")
+for n in matrix_a:
+    print(n)
 
-Y = [[5,8],
-    [6,7],
-    [4,5]]
+print("Enter the elements of Second Matrix:")
+matrix_b= [[int(input()) for i in range(column)] for i in range(rows)]
+for n in matrix_b:
+    print(n)
+    
+result=[[0 for i in range(column)] for i in range(rows)]
 
-result = [[X[i][j] + Y[i][j]  for j in range(len(X[0]))] for i in range(len(X))]
+for i in range(rows):
+    for j in range(column):
+        result[i][j] = matrix_a[i][j]+matrix_b[i][j]
 
+print("The Sum of Above two Matrices is : ")
 for r in result:
-   print(r)
+    print(r)
