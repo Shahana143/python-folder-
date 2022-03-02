@@ -1,0 +1,14 @@
+# Program to add two matrices using 
+
+X = [[7,3],
+    [5,6],
+    [8,9]]
+
+Y = [[5,8],
+    [6,7],
+    [4,5]]
+
+result = [[X[i][j] + Y[i][j]  for j in range(len(X[0]))] for i in range(len(X))]
+
+for r in result:
+   print(r)
